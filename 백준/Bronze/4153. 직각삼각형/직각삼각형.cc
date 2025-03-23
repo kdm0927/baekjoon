@@ -6,16 +6,16 @@ int main() {
 
     while (true) {
         cin >> a >> b >> c;
-        if (a == 0 && b == 0 && c == 0) break;
+        if (a == 0 && b == 0 && c == 0) break; // 입력값이 0 0 0이면 프로그램 종료
 
-        int m = max(a, max(b, c));
+        int m = max(a, max(b, c)); //가장 큰 값 구하기 
         int ab;
 
-        if (m == a) {
-            ab = b * b + c * c;
-        } else if (m == b) {
+        if (m == a) { //가장 큰 값이 a이면
+            ab = b * b + c * c; 
+        } else if (m == b) { //b가 가장 큰 값이면
             ab = a * a + c * c;
-        } else {
+        } else { //c가 가장 큰 값이면
             ab = a * a + b * b;
         }
 
