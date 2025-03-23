@@ -19,7 +19,7 @@ int main() {
 
     cin >> n;
 
-    vector<int> list(n);
+    vector<int> list(n); //size가 n인 동적 배열 생성
     for (int i=0; i<n; i++) {
         cin >> list[i];
     }
